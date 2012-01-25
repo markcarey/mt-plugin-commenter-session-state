@@ -1,0 +1,13 @@
+# v1.0.0 - initial release
+name: Commenter Session State
+id: CommenterSessionState
+key: CommenterSessionState
+author_link: http://mt-hacks.com/
+author_name: MT Hacks
+description: Developer plugin that adds a callback enabling plugins to modify the user session state data that gets sent via JSONP during a commenter login.
+version: 1.0.0
+plugin_link: http://mt-hacks.com/commentersessionstate.html
+
+callbacks:
+    init_app:       $CommenterSessionState::CommenterSessionState::App::Comments::init_app
+
